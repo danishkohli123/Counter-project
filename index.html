@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Counter</title>
+    <style>
+        body {
+            margin-top: 100px;
+        }
+
+        section {
+            border: 1px solid white;
+            width: 30%;
+            margin: auto;
+            text-align: center;
+            padding-bottom: 50px;
+            box-shadow: 0px 10px 20px grey;
+        }
+
+        h1 {
+            font-size: 50px;
+            margin-bottom: 0%;
+        }
+
+        h2 {
+            margin-bottom: 0%;
+            margin-top: 0%;
+            font-size: 100px;
+        }
+
+        .btn {
+            width: 40px;
+            height: 35px;
+            font-size: 31px;
+            background-color: red;
+            border-radius: 6px;
+            color: white;
+            cursor: pointer;
+        }
+    </style>
+</head>
+
+<body>
+    <section>
+        <h1>Counter</h1>
+        <h2 id="h2">0</h2>
+        <button class="btn" onclick="counter('-')" style="background-color:red ;">-</button>
+        <button class="btn" onclick="counter('')" style="background-color:grey ;width: 100px;">Reset</button>
+        <button class="btn" onclick="counter('+')" style="background-color:green;">+</button>
+    </section>
+</body>
+<script src="script.js"></script>
+</html>
